@@ -14,6 +14,7 @@ export default function Home() {
     createUserWithEmailAndPassword(database, email, password)
       .then((data) => {
         console.log(data);
+        setAlert('User created successfully!');
       })
       .catch((error) => {
         // Handle error
